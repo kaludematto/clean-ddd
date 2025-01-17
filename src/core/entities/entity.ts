@@ -13,3 +13,5 @@ export class Entity<Props> {
     this._id = id ?? new UniqueEntityID()
   }
 }
+
+const test = 'hello world'
