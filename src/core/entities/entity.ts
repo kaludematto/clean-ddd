@@ -14,4 +14,5 @@ export class Entity<Props> {
   }
 }
 
-const test = 'hello world'
+const test = 'test'
+console.log(test)
