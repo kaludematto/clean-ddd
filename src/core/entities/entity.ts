@@ -13,6 +13,3 @@ export class Entity<Props> {
     this._id = id ?? new UniqueEntityID()
   }
 }
-
-const test = 'test'
-console.log(test)
