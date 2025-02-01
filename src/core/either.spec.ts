@@ -1,9 +1,17 @@
-import { left, right } from './either'
+import { Either, left, right } from './either'
+
+function doSomething(shouldSuccess: boolean): Either<string, string> {
+  if (shouldSuccess) {
+    return right('success')
+  } else {
+    return left('error')
+  }
+}
 
 test('success result', () => {
-  const success = right('success')
+  const successResult = doSomething(true)
 
-  expect(success.value).toEqual('success')
+  expect(successResult.value).toEqual('success')
 })
 
 test('error result', () => {
